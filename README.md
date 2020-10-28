@@ -1,4 +1,4 @@
-# public
+# Ryan James Kim public portfolio
 Examples of adaptations and code
 
 TPT2017CNN.ipynb
