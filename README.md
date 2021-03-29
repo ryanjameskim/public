@@ -9,4 +9,6 @@ Reduced_Scale_LTSM_only.ipynb
  -- Limit order book time series analysis using double LSTM to predict 1 minute future average price (categorical)
  -- skills: Pandas, Data generator, Keras, Tensorflow, NLP architectures
 
-Kaggle Tabular Playground Series - Mar 2021
+Kaggle_Tabular_Mar_2021.ipynb
+ -- Kaggle Tabular Playground Series - Mar 2021
+ -- Adapted mainly from @AndresHG
