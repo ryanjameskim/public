@@ -12,3 +12,8 @@ Reduced_Scale_LTSM_only.ipynb
 Kaggle_Tabular_Mar_2021.ipynb
  -- Kaggle Tabular Playground Series - Mar 2021
  -- Adapted mainly from @AndresHG
+
+210331 Selenium BR ishares downloader.py
+  -- Scrapes all 300+ of holding data from Blackrock ishares website
+  -- packages: selenium
+  -- skills: web scraping
