@@ -17,3 +17,7 @@ Kaggle_Tabular_Mar_2021.ipynb
   -- Scrapes all 300+ of holding data from Blackrock ishares website
   -- packages: selenium
   -- skills: web scraping
+
+210420 BR Data Cleaner.py
+  -- Converts 'corrupt' XML XLS downloaded sheets into clean csv tables of holdings
+  
