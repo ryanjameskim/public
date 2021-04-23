@@ -42,3 +42,12 @@ Kaggle_Tabular_Mar_2021.ipynb
 210421 BR Holdings Filter.py
 
 * Reduces cleaned CSV files down to US equity only table
+
+210422 ETF2Vec Keras Implementation.py
+
+* concept with individual stock holdings from all of BlackRock's US Public Equity ETF holdings in order to dimensionalize 'ETF stock selection criteria'
+into vector form.
+
+* Proximity in holding size within an ETF is taken as primary context with a Zipf similiarity negative sample selection.
+
+* skills: _keras_ functional API, _pandas_, deep learning, neural networks
