@@ -61,3 +61,12 @@ into vector form.
 * Added embedding projector visualization
 
 * skills: _keras_ functional API, batching, tensorflow embedding projector
+
+
+210428 ETF v Vector Return comparison.py
+
+* Explored the implications of vectorizing ETFs as a weighted sum of its component stocks
+
+* Identified 29 ETFs in which a portfolio of the closest 15 stocks outperformed the ETF with lower standard deviation.
+
+* skills: _pandas_, data analysis, _yfinance_ package
