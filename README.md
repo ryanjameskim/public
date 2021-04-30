@@ -1,5 +1,9 @@
-# Ryan James Kim public portfolio
+## Ryan James Kim public portfolio
 Examples of adaptations and code
+
+# Please visit [my coding blog](www.ryanjameskim.com) for a more visually-pleasing tour of these code examples.
+
+***
 
 TPT2017CNN.ipynb
 
