@@ -80,82 +80,10 @@ class multilinearexpansion:
             else:
                 print('\n')
 
-
-def main():
-    mle = multilinearexpansion([1,2,1,4],5)
-    mle2 = multilinearexpansion([3,4,1,2],5)
-    mle3 = multilinearexpansion([1,5,2,6,3,7,4,8],7)
-
-if __name__ == "__main__":
-    main()
-
-
-'''
-for r_i in r:
-    print(f'{r_i}: {calculate_f_r(r_i)}')
-
-
-
-
-
-
-initial_vector = np.zeros(n_dimensions)
-final_vectors = []
-for n in range(n_dimensions):
-    for i in range(field):
-
-
-
-
-
-
-domain = [np.array([0]), np.array([1])]
-for i in range(len(domain)):
-    domain[i] = np.expand_dims(domain[i], axis=0)
-    domain[i] = np.append(0,domain[i])
-
-
-
-r = (0,2)
-w = (0, 0)
-
-chi = [(1)*(-1) = -1] * 1
-
-r = (0, 2)
-w = (0, 1)
-
-chi = [(1) * 2 = 2] * 2 = 4 
-
-r = (0, 2)
-w = (1, 0)
-
-chi = [(0) ]
-
-r = (0, 2)
-w = (1, 1)
-
-chi = [(0) * (2)]
-
-
-
-    def calculate_mle:
-        #calculate coefficients of multi linear expansion
-        coefs = np.zeros(2 ** self.dimension)
-        for i, out in enumerate(self.outputs):
-
-
-    def construct_inverse_cof_matrix:
-        #number of degree terms is equal to dimension (v) CHOOSE 0 , ... , v
-        n_rows_per_degree = [math.factorial(self.dimension) /
-                            (math.factorial(i) * math.factorial(self.dimension-i)) for i in range(n+1)] #produces list of terms
-        cumulative_sum_of_rows = [sum(n_rows_per_degree[0:i]) for i in range(1,len(n_rows_per_degree)+1)]
-
-        for degreeness, rows in enumerate(n_rows_per_degree):
-            hi_degree_sign = 1
-            for i in range(rows):
-                temp_list = [hi_degree_sign]
-
-
+    def mle_equation(self):
+        '''can only handle hardcoded coefficient matrixes now
+        trying to figure out a dynamic solution
+        '''
 
         if self.dimension == 2:
             #hardcode
@@ -170,18 +98,33 @@ chi = [(0) * (2)]
             self.coff_matrix = np.array(
                                        [[1, -1, -1, -1,  1,  1,  1, -1],
                                         [0,  0,  0,  1,  0, -1, -1,  1],
-                                        [0,  0   1,  0, -1,  0, -1,  1],
+                                        [0,  0,  1,  0, -1,  0, -1,  1],
                                         [0,  1,  0,  0, -1, -1,  0,  1],
                                         [0,  0,  0,  0,  0,  0,  1, -1],
-                                        [0,  0,  0,  0,  0,  1,  0, -1]
-                                        [0,  0,  0,  0,  1,  0,  0, -1]
+                                        [0,  0,  0,  0,  0,  1,  0, -1],
+                                        [0,  0,  0,  0,  1,  0,  0, -1],
                                         [0,  0,  0,  0,  0,  0,  0,  1]])            
 
 
-            #transpose the list of outputs into column matrix -- this is bracketed to add another dimension
-            self.trans_outputs = np.transpose([self.outputs])
-            #element-wise multiply the coff matrix and the transposed outputs, then sum by column
-            self.multilinearequation = np.sum(np.multiply(coff_matrix, trans_outputs), axis=0)
+        #transpose the list of outputs into column matrix -- this is bracketed to add another dimension
+        self.trans_outputs = np.transpose([self.outputs])
+        #element-wise multiply the coff matrix and the transposed outputs, then sum by column
+        self.multilinearequation = np.sum(np.multiply(self.coff_matrix, self.trans_outputs), axis=0)
+
+        print(self.multilinearequation)
 
 
-'''
+
+
+def main():
+    mle = multilinearexpansion([1,2,1,4],5)
+    mle.mle_equation()
+    mle2 = multilinearexpansion([3,4,1,2],5)
+    mle2.mle_equation()
+    mle3 = multilinearexpansion([1,5,2,6,3,7,4,8],7)
+    mle3.mle_equation()
+
+if __name__ == "__main__":
+    main()
+
+
