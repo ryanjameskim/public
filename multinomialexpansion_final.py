@@ -121,10 +121,9 @@ def main():
     mle.mle_equation()
     mle2 = multilinearexpansion([3,4,1,2],5)
     mle2.mle_equation()
-    mle3 = multilinearexpansion([1,5,2,6,3,7,4,8],7)
+    mle3 = multilinearexpansion([1,5,2,3,6,7,4,8],11)
     mle3.mle_equation()
 
 if __name__ == "__main__":
     main()
-
 
