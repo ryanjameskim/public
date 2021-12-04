@@ -74,3 +74,9 @@ into vector form.
 * Identified 29 ETFs in which a portfolio of the closest 15 stocks outperformed the ETF with lower standard deviation.
 
 * skills: _pandas_, data analysis, _yfinance_ package
+
+multinomialexpansion_final.py
+
+* python script that uses both expands and calculates the explicit polynomial of a multilinear expansion from any n-dimensional {0,1} function.
+
+* Completed as part of an exploration of Zero Knowledge Proofs during the [https://zeroknowledge.fm/zk-hack/](ZK Hackathon). Exercises from Justin Thaler's book [https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.pdf](Proofs, Arguments, and Zero-Knowledge).
